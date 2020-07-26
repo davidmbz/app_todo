@@ -1,0 +1,100 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* AÑADIR TAREAS */
+
+.anadirTarea {
+    width: 100%;
+    background-color: tomato;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.anadirTarea .formulario input[type=text] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.anadirTarea .formulario #selectPrioridad1 {
+    background: none;
+    float: left;
+    margin-left: 25%;
+    padding: 13px;
+}
+
+.anadirTarea .formulario #boton {
+    background: none;
+    border: 1px solid white;
+    padding: 15px;
+    color: black;
+    float: right;
+    margin-right: 25%;
+}
+
+.anadirTarea .formulario #boton:hover {
+    border: 1px solid black;
+}
+
+/* FILTRO TAREAS */
+
+.filtroTareas {
+    width: 100%;
+    background-color: lightskyblue;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filtroTareas .buscador #selectTarea {
+    width: 60%;
+    padding: 10px;
+}
+
+.filtroTareas .buscador #selectPrioridad2 {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+/* TAREAS */
+
+.tareas {
+    width: 100%;
+    background-color: lightsalmon;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tareas ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.tareas ul div {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tareas ul div li {
+    margin: 0 auto;
+}
+
+.tareas ul div button {
+    padding: 10px;
+}

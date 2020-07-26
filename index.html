@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP TODO'S</title>
+    <title>TODO'S</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/modelo.js"></script>
-
 </head>
 
 <body>
+    <div class="container">
 
+        <div class="anadirTarea">
+            <form class="formulario">
+                <input id="addTarea" type="text" placeholder="Añadir tarea">
+                <select id="selectPrioridad1">
+                    <option>Diaria</option>
+                    <option>Mensual</option>
+                    <option>Urgente</option>
+                </select>
+                <input id="boton" type="button" value="Guardar">
+            </form>
+        </div>
+
+        <div class="filtroTareas">
+            <form class="buscador">
+                <input type="text" id="selectTarea" placeholder="Buscar tarea">
+                <select id="selectPrioridad2">
+                    <option>Diaria</option>
+                    <option>Mensual</option>
+                    <option>Urgente</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="tareas">
+            <ul id="ulTareas">
+                <div data-id="${pTarea.id}" id="tarea_${pTarea.id}" style="background-color: red;">
+                    <li>Estudiar Javascript</li>
+                    <a href="#" onclick="borrarTarea('tarea_${pTarea.id}')">Eliminar</a>
+                </div>
+                <div data-id="${pTarea.id}" id="tarea_${pTarea.id}" style="background-color: blue;">
+                    <li>Dormir</li>
+                    <a href="#" onclick="borrarTarea('tarea_${pTarea.id}')">Eliminar</a>
+                </div>
+                <div data-id="${pTarea.id}" id="tarea_${pTarea.id}" style="background-color: green;">
+                    <li>Irme de cañas</li>
+                    <a href="#" onclick="borrarTarea('tarea_${pTarea.id}')">Eliminar</a>
+                </div>
+        </div>
+
+    </div>
 
 
     <script src="js/funciones.js"></script>
