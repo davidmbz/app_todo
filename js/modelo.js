@@ -11,7 +11,7 @@ const listaTareas = new Array(
     },
     {
         id: 3,
-        titulo: 'Salir a comer',
+        titulo: 'Irme de cañas',
         prioridad: 'Mensual'
     }
 );

@@ -6,29 +6,32 @@ function guardarTarea(pTarea) {
 }
 
 
-
-
 // FILTRAR TAREAS
 
-// function filtrarXPrioridad(pListaTareas, pPrioridad) {
-//     if (pPrioridad = pListaTareas.filter(pTarea => pTarea.prioridad == pPrioridad));
+function filtrarXPrioridad(pListaTareas, pPrioridad) {
 
-//     return tareasFiltradas;
-// }
+    let tareasXPrioridad = new Array();
+
+    for (tarea of pListaTareas) {
+        if (tarea.prioridad == pPrioridad) {
+            tareasXPrioridad.push(tarea);
+        }
+    }
+
+    return tareasXPrioridad;
+}
 
 // function filtrarXTarea(pListaTareas, pTitulo) {
-//     let tareaXTitulo = new Array();
+//     const tareaFiltrada = pListaTareas.filter(tarea => tarea.titulo.includes(pTitulo));
 
-//     tareaXTitulo = pListaTareas.filter(tarea => tarea.titulo == pTitulo.toLowerCase());
-
-//     return tareaXTitulo;
+//     return tareaFiltrada;
 // }
 
 
 // BORRAR TAREAS
 
 function borrar(pId) {
-    console.log(pId); // id
+    // console.log(pId);
     let id = parseInt(pId);
 
     let posicionBorrar = listaTareas.findIndex(tarea => tarea.id == id);

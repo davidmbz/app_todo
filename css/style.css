@@ -15,6 +15,11 @@ body {
     margin: 0 auto;
 }
 
+.container h1 {
+    text-align: center;
+    color: black;
+}
+
 /* AÑADIR TAREAS */
 
 .anadirTarea {
@@ -38,7 +43,7 @@ body {
     padding: 13px;
 }
 
-.anadirTarea .formulario #boton {
+.anadirTarea .formulario #btnGuardar {
     background: none;
     border: 1px solid white;
     padding: 15px;
@@ -47,7 +52,7 @@ body {
     margin-right: 25%;
 }
 
-.anadirTarea .formulario #boton:hover {
+.anadirTarea .formulario #btnGuardar:hover {
     border: 1px solid black;
 }
 
