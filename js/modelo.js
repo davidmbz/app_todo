@@ -1,16 +1,16 @@
-let listaTareas = new Array(
+const listaTareas = new Array(
     {
-        idTarea: 1,
+        id: 1,
         titulo: 'Estudiar Javascript',
         prioridad: 'Urgente'
     },
     {
-        idTarea: 2,
+        id: 2,
         titulo: 'Dormir',
         prioridad: 'Diaria'
     },
     {
-        idTarea: 3,
+        id: 3,
         titulo: 'Salir a comer',
         prioridad: 'Mensual'
     }

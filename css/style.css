@@ -95,6 +95,7 @@ body {
     margin: 0 auto;
 }
 
-.tareas ul div button {
-    padding: 10px;
+.tareas ul div a {
+    text-decoration: none;
+    color: white;
 }

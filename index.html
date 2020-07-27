@@ -16,11 +16,11 @@
             <form class="formulario">
                 <input id="addTarea" type="text" placeholder="Añadir tarea">
                 <select id="selectPrioridad1">
-                    <option>Diaria</option>
-                    <option>Mensual</option>
-                    <option>Urgente</option>
+                    <option class="diaria">Diaria</option>
+                    <option class="mensual">Mensual</option>
+                    <option class="urgente">Urgente</option>
                 </select>
-                <input id="boton" type="button" value="Guardar">
+                <input id="btnGuardar" type="button" value="Guardar">
             </form>
         </div>
 
@@ -28,16 +28,16 @@
             <form class="buscador">
                 <input type="text" id="selectTarea" placeholder="Buscar tarea">
                 <select id="selectPrioridad2">
-                    <option>Diaria</option>
-                    <option>Mensual</option>
-                    <option>Urgente</option>
+                    <option class="diaria">Diaria</option>
+                    <option class="mensual">Mensual</option>
+                    <option class="urgente">Urgente</option>
                 </select>
             </form>
         </div>
 
         <div class="tareas">
             <ul id="ulTareas">
-                <div data-id="${pTarea.id}" id="tarea_${pTarea.id}" style="background-color: red;">
+                <!-- <div data-id="${pTarea.id}" id="tarea_${pTarea.id}" style="background-color: red;">
                     <li>Estudiar Javascript</li>
                     <a href="#" onclick="borrarTarea('tarea_${pTarea.id}')">Eliminar</a>
                 </div>
@@ -48,7 +48,7 @@
                 <div data-id="${pTarea.id}" id="tarea_${pTarea.id}" style="background-color: green;">
                     <li>Irme de cañas</li>
                     <a href="#" onclick="borrarTarea('tarea_${pTarea.id}')">Eliminar</a>
-                </div>
+                </div> -->
         </div>
 
     </div>
